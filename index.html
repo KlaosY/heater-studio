@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -47,7 +47,6 @@
       <span class="marquee__item">Brand Systems <span class="marquee__sep">◆</span></span>
       <span class="marquee__item">Now booking Q3 2026 <span class="marquee__sep">◆</span></span>
       <span class="marquee__item">Mexico City · Roma Norte <span class="marquee__sep">◆</span></span>
-      <!-- duplicate for seamless loop -->
       <span class="marquee__item">Identity <span class="marquee__sep">◆</span></span>
       <span class="marquee__item">Web <span class="marquee__sep">◆</span></span>
       <span class="marquee__item">Type <span class="marquee__sep">◆</span></span>
@@ -63,24 +62,21 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__inner">
-        <!-- Decorative shapes -->
-        <div class="hero__shape hero__shape--circle" aria-hidden="true"></div>
-        <div class="hero__shape hero__shape--arc" aria-hidden="true"></div>
-        <svg class="hero__shape hero__shape--squiggle" aria-hidden="true" viewBox="0 0 100 100" fill="none">
-          <path d="M5 50 Q 20 20, 35 50 T 65 50 T 95 50" stroke="#FFE34D" stroke-width="12" stroke-linecap="round"/>
+        <svg class="hero__shape hero__shape--star" viewBox="0 0 80 80" fill="currentColor" aria-hidden="true">
+          <path d="M40 0 L46 30 L80 35 L52 50 L62 80 L40 60 L18 80 L28 50 L0 35 L34 30 Z"/>
         </svg>
 
         <h1 class="hero__logo">HEATER</h1>
 
-        <div class="hero__bottom">
+        <div class="hero__row">
           <p class="hero__tagline">
-            Identity, web, type<br />
-            — for things <em>worth making.</em>
+            Identity, web, type —<br />
+            for things <em>worth making.</em>
           </p>
           <div>
-            <p class="hero__body">
-              A multi-disciplinary studio in Mexico City. We work with cafés, labels, fintech, and people who don't want a boring website. Now booking Q3 2026.
-            </p>
+            <div class="hero__body">
+              <p>A multi-disciplinary studio in Mexico City. We work with cafés, labels, fintech, and people who don't want a boring website. Now booking Q3 2026.</p>
+            </div>
             <div class="hero__cta">
               <a href="work.html" class="btn btn--ink">See the work <span class="arrow">→</span></a>
               <a href="contact.html" class="btn btn--ghost">Tell us what you're making</a>
@@ -91,30 +87,30 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="section">
+    <section class="section section--white">
       <div class="wrap">
         <header class="section__head">
-          <span class="section__index">(01) <br />What we do</span>
+          <span class="section__index">(01)<br />WHAT WE DO</span>
           <h2 class="section__title">Four things, <em>done loud.</em></h2>
         </header>
 
         <div class="services">
-          <article class="service service--yellow">
+          <article class="service service--white">
             <span class="service__num">01</span>
             <h3 class="service__title">Identity</h3>
             <p class="service__copy">Marks, logotypes, palettes, packaging, motion. The whole system, built to flex from a calling card to a billboard.</p>
           </article>
-          <article class="service service--blue">
+          <article class="service service--cobalt">
             <span class="service__num">02</span>
             <h3 class="service__title">Web</h3>
             <p class="service__copy">Hand-coded websites that load fast, work everywhere, and feel built — not assembled. WordPress need not apply.</p>
           </article>
-          <article class="service service--magenta">
+          <article class="service service--pink">
             <span class="service__num">03</span>
             <h3 class="service__title">Type</h3>
             <p class="service__copy">Custom typefaces and lettering. Single-weight wordmarks to full variable families. We occasionally release for sale.</p>
           </article>
-          <article class="service service--lime">
+          <article class="service service--yellow">
             <span class="service__num">04</span>
             <h3 class="service__title">Photo</h3>
             <p class="service__copy">In-house product, brand, and editorial photography. We art-direct, we shoot, we retouch. Cheaper than freelance, better than stock.</p>
@@ -124,16 +120,16 @@
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="section" style="background: var(--bone);">
+    <section class="section">
       <div class="wrap">
         <header class="section__head">
-          <span class="section__index">(02) <br />Selected work</span>
-          <h2 class="section__title">Recent <em>heat.</em></h2>
+          <span class="section__index">(02)<br />SELECTED WORK</span>
+          <h2 class="section__title">Recent <em class="is-cobalt">heat.</em></h2>
         </header>
 
         <div class="projects">
           <a href="work/sunwheel.html" class="project project--feature">
-            <div class="project__media project__media--magenta">
+            <div class="project__media project__media--pink">
               <img class="project__img" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1200&q=80&auto=format&fit=crop" alt="Coffee beans" />
               <span class="project__num">(01)</span>
               <span class="project__cat">Identity + Web</span>
@@ -144,7 +140,7 @@
             </div>
           </a>
           <a href="work.html#riff" class="project">
-            <div class="project__media project__media--blue">
+            <div class="project__media project__media--cobalt">
               <img class="project__img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80&auto=format&fit=crop" alt="Vinyl records" />
               <span class="project__num">(02)</span>
               <span class="project__cat">Type + Identity</span>
@@ -175,23 +171,22 @@
 
     <!-- MANIFESTO -->
     <section class="manifesto">
-      <span class="manifesto__mark" aria-hidden="true">★</span>
       <div class="wrap">
-        <span class="section__index" style="color: var(--lime); display: block; margin-bottom: 24px;">(03) — Manifesto</span>
+        <span class="label label--white" style="display: block; margin-bottom: 24px;">(03) — MANIFESTO</span>
         <blockquote class="manifesto__quote">
           Brands are loud now.<br />
           Not because we say so —<br />
           because <em>they have to be.</em>
         </blockquote>
-        <p class="manifesto__cite">— H.S., Founder · Mexico City, 2026</p>
+        <p class="manifesto__cite">— H.S., FOUNDER · MEXICO CITY, 2026</p>
       </div>
     </section>
 
     <!-- BIG CTA -->
     <section class="bigcta">
       <div class="wrap">
-        <span class="label" style="color: var(--cream); opacity: 0.7;">(04) — Next</span>
-        <h2 class="bigcta__title" style="margin-top: 16px;">
+        <span class="label" style="color: var(--white); display: block; margin-bottom: 16px;">(04) — NEXT</span>
+        <h2 class="bigcta__title">
           Got something<br />
           <em>worth making?</em>
         </h2>
@@ -209,15 +204,13 @@
     <div class="wrap">
       <div class="site-footer__top">
         <div>
-          <a href="/" class="brand-mark" style="font-size: 28px;">
+          <a href="/" class="brand-mark" style="color: var(--lime);">
             <span class="brand-mark__dot"></span> HEATER
           </a>
-          <p style="margin-top: 16px; font-family: var(--font-display); font-size: 22px; line-height: 1.1; color: var(--ink); max-width: 320px; text-transform: uppercase; letter-spacing: -0.02em;">
-            A studio in Mexico City. Booking Q3 2026.
-          </p>
+          <p class="site-footer__big">A studio in Mexico City. <em>Booking Q3 2026.</em></p>
         </div>
         <div>
-          <h6>Studio</h6>
+          <h6>STUDIO</h6>
           <ul>
             <li><a href="work.html">Work</a></li>
             <li><a href="studio.html">About</a></li>
@@ -226,17 +219,17 @@
           </ul>
         </div>
         <div>
-          <h6>Elsewhere</h6>
+          <h6>ELSEWHERE</h6>
           <ul>
             <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
             <li><a href="https://are.na" target="_blank" rel="noopener">Are.na ↗</a></li>
-            <li><a href="https://areena.co" target="_blank" rel="noopener">Read.cv ↗</a></li>
+            <li><a href="#">Read.cv ↗</a></li>
             <li><a href="#">Type catalogue</a></li>
           </ul>
         </div>
         <div class="footer-newsletter">
-          <h6>Hot stuff, monthly</h6>
-          <p>One email a month — what we shipped, what we read, what we'd love to make next. No spam.</p>
+          <h6>HOT STUFF, MONTHLY</h6>
+          <p>One email a month — what we shipped, what we read, what we'd love to make next.</p>
           <form>
             <label class="sr-only" for="footer-email">Email</label>
             <input id="footer-email" name="email" type="email" placeholder="you@somewhere.co" autocomplete="email" />
@@ -245,9 +238,9 @@
         </div>
       </div>
       <div class="site-footer__base">
-        <p>© 2026 HEATER STUDIO · CDMX · Made in this very browser.</p>
+        <p>© 2026 HEATER STUDIO · CDMX · MADE BY HAND</p>
         <p>
-          <a href="#">Privacy</a> · <a href="#">Imprint</a> · <a href="https://instagram.com" target="_blank" rel="noopener">IG ↗</a>
+          <a href="#">PRIVACY</a> · <a href="#">IMPRINT</a> · <a href="https://instagram.com" target="_blank" rel="noopener">IG ↗</a>
         </p>
       </div>
     </div>
